@@ -28,6 +28,10 @@ In "Zeile 23,24" kannst du sehen "if message.content.startswith('hello'): await 
 
 Auf dem Skript könnt ihr eueren Bot aufbauen.
 
+# Wilkommensbildschirm
+Als erstes muss man die Autoroles konfigurieren ( Skript ist im Ordner Funktionen mit dem namen welcome), Die ID vom Server ist nicht mit Klammern versehen.
+
+Der Rest steht im Skript, die Kommentierungen bitte einfach mit den richtigen Daten austauschen. 
 
 
 
@@ -41,3 +45,4 @@ Discord-py müsst ihr auf dem Pi installieren, sonst geht gar nichts, die restli
 # Links
 Discord Python bei GitHub: https://github.com/Rapptz/discord.py
                                   
+
