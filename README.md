@@ -27,7 +27,7 @@ In "Zeile 23,24" kannst du sehen "if message.content.startswith('hello'): await 
 Auf dem Skript könnt ihr eueren Bot aufbauen.
 
 # Hosten vom Bot
-Ihr könnt euern Bot z.B be replit hosten, wer den Bot aber bei sich Zuhause hosten möchte, kann ein Raspberry Pi mit dem Rapberry Pi Os nehmen, dann könnt ihr per VNC Connect einen Remote-Zugriff darauf einrichten , wo ihr auch den vollständigen desktop vom Pi sehen könnt.
+Ihr könnt euern Bot z.B be replit hosten, wer den Bot aber bei sich Zuhause hosten möchte, kann ein Raspberry Pi mit dem Rapberry Pi Os nehmen, dann könnt ihr per VNC Connect einen Remote-Zugriff darauf einrichten , wo ihr auch den vollständigen Desktop vom Pi sehen könnt.
 Alle Libarys die das Bot-Skript braucht, müsst ihr auch auf dem Pi installieren.
 Discord-py müsst ihr auf dem Pi installieren, sonst geht gar nichts, die restlichen Liabrys die ihr euch nachinstalliert habt, welche auch vom Skript genutzt werden, müssen dann halt auch auf dem Pi installiert werden.
 
