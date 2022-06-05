@@ -33,7 +33,7 @@ Discord-py müsst ihr auf dem Pi installieren, sonst geht gar nichts, die restli
 
 
 
-#Sonstiges
+# Sonstiges
 Discord Python bei GitHub: https://github.com/Rapptz/discord.py
                                   
 
