@@ -1,0 +1,14 @@
+autoroles = {
+   (#ID vom Server, klammern auch weg machen , NUR BEI DER SERVER ID SONST NICHT): {'memberoles': #Rollen für neue Member],}
+}
+
+@client.event
+async def on_member_join(member):
+    await client.get_channel(#ID vom Wilkommenskanal).send (f"Hi {member.mention} willkommen auf meinem Server!")
+    guild: guild = member.guild 
+    autoguild  = autoroles.get(guild.id)
+    if autoguild: autoguild  ['memberoles']
+    for roleId in  autoguild['memberoles']:
+               role = guild.get_role(roleId)
+               if role: 
+                   await member.add_roles(role, reason='autoroles, atomic=True')
