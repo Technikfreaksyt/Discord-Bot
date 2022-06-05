@@ -15,7 +15,7 @@ py -3 -m pip install -U discord.py
 # Discord-Bot #2
 Jetzt installierst du dir VS-Code: https://code.visualstudio.com/download mit dem Python Addon, welches du im VS-Code Addon Store findest.
 Jetzt installierst du dir das Programm Python : https://code.visualstudio.com/download
-Du kannst die Datei Bot als ansatz nutzen.
+Du kannst die Datei Bot als Ansatz nutzen.
 
 # Einrichten vom Skript
 Wenn du dir das Skript dann heruntergeladen und in VS-Code geöffnet hast, wirst in "Zeile 9" sehen "activity = discord.Game(name="KI", type=1)" 
