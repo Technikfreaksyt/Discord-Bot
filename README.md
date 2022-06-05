@@ -5,7 +5,8 @@ Danach gehst du auf den Punkt Bot und erstellst einen.
 Dort wird etwas von einem Token stehen, den musst du unbedingt aufbeahren, erstelle dir dafür am besten eine Textdatei und sichere sie, du kannst den Token zwar zurrücksetzen, aber dann musst du den Token austauschen. 
 
 Jetzt musst du dir Discord-py installieren: 
-Discord py:
+
+# Discord py:
 MAC OS:
 python3 -m pip install -U discord.py
 Windows:
