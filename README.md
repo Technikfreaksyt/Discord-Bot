@@ -12,10 +12,12 @@ python3 -m pip install -U discord.py
 Windows:
 py -3 -m pip install -U discord.py
 
+Jetzt musst du in den Benutzereinstellungen in Discord unter erweitert den Entwicklermodus aktivieren.
+
 # Discord-Bot #2
 Jetzt installierst du dir VS-Code: https://code.visualstudio.com/download mit dem Python Addon, welches du im VS-Code Addon Store findest.
 Jetzt installierst du dir das Programm Python : https://code.visualstudio.com/download
-Du kannst die Datei Bot als Ansatz nutzen.
+
 
 # Einrichten vom Skript
 Wenn du dir das Skript dann heruntergeladen und in VS-Code geöffnet hast, wirst in "Zeile 10" sehen "activity = discord.Game(name="KI", type=1)" 
@@ -26,6 +28,28 @@ In "Zeile 23,24" kannst du sehen "if message.content.startswith('hello'): await 
 
 Auf dem Skript könnt ihr eueren Bot aufbauen.
 
+# Wilkommensbildschirm
+Als erstes muss man die Autoroles konfigurieren mit(kopiere es so): autoroles = {
+                                                         #Ersetzen durch Server ID: {'memberoles':[#ID der Rollen die ein Mensch bekommen soll], }
+Dadurch bekommt das neue Mitglied automatisch eine Rolle
+
+
+Dann müsst ihr ein @client.event machen mit "async def on_member_join(member):
+                                                 await client.get_channel(# ID die der Wilkommenskanal hat).(f"Hi {member.mention} willkommen auf meinem Server!") "
+
+Die Wilkommensnachricht könnt ihr so machen wie ihr sie wollt, das membe.mention erwähnt  nur den Benutzer der gejoint ist
+Dann unter dem await: " guild: guild = member.guild 
+    autoguild  = autoroles.get(guild.id)
+    if autoguild: autoguild  ['memberoles']
+    for roleId in  autoguild['memberoles']:
+               role = guild.get_role(roleId)
+               if role: 
+                   await member.add_roles(role, reason='autoroles, atomic=True')"
+
+Den Code könnt ihr so kopieren und in euer Skript einfügen. 
+
+
+
 # Hosten vom Bot
 Ihr könnt euern Bot z.B be replit hosten, wer den Bot aber bei sich Zuhause hosten möchte, kann ein Raspberry Pi mit dem Rapberry Pi Os nehmen, dann könnt ihr per VNC Connect einen Remote-Zugriff darauf einrichten , wo ihr auch den vollständigen Desktop vom Pi sehen könnt.
 Alle Libarys die das Bot-Skript braucht, müsst ihr auch auf dem Pi installieren.
@@ -33,7 +57,6 @@ Discord-py müsst ihr auf dem Pi installieren, sonst geht gar nichts, die restli
 
 
 
-# Sonstiges
+# Links
 Discord Python bei GitHub: https://github.com/Rapptz/discord.py
                                   
-
