@@ -18,7 +18,7 @@ Jetzt installierst du dir das Programm Python : https://code.visualstudio.com/do
 Du kannst die Datei Bot als Ansatz nutzen.
 
 # Einrichten vom Skript
-Wenn du dir das Skript dann heruntergeladen und in VS-Code geöffnet hast, wirst in "Zeile 9" sehen "activity = discord.Game(name="KI", type=1)" 
+Wenn du dir das Skript dann heruntergeladen und in VS-Code geöffnet hast, wirst in "Zeile 10" sehen "activity = discord.Game(name="KI", type=1)" 
 Das KI kannst z.B durch den Namen des Bots, oder ein beliebiges Wort ersetzen.
 In "Zeile 11" wirstdu das sehen "await client.change_presence(status=discord.Status.online, activity=activity)" , das online kannst du durch online,idle,do_not_disturb oder invisble ersetzen.
 
