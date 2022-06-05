@@ -13,3 +13,26 @@ Windows:
 py -3 -m pip install -U discord.py
 
 # Discord-Bot #2
+Jetzt installierst du dir VS-Code: https://code.visualstudio.com/download mit dem Python Addon, welches du im VS-Code Addon Store findest.
+Jetzt installierst du dir das Programm Python : https://code.visualstudio.com/download
+Du kannst die Datei Bot als ansatz nutzen.
+
+# Einrichten vom Skript
+Wenn du dir das Skript dann heruntergeladen und in VS-Code geöffnet hast, wirst in "Zeile 9" sehen "activity = discord.Game(name="KI", type=1)" 
+Das KI kannst z.B durch den Namen des Bots, oder ein beliebiges Wort ersetzen.
+In "Zeile 11" wirstdu das sehen "await client.change_presence(status=discord.Status.online, activity=activity)" , das online kannst du durch online,idle,do_not_disturb oder invisble ersetzen.
+
+In "Zeile 23,24" kannst du sehen "if message.content.startswith('hello'): await message.channel.send('Hello!')" das erste Hello ist ein Befehl, den könnt ihr beliebig verändern, der Teil wo das zweite Hello ist das, was passiert wenn z.B hello geschrieben wird.
+
+Auf dem Skript könnt ihr eueren Bot aufbauen.
+
+# Hosten vom Bot
+Ihr könnt euern Bot z.B be ireplit hosten, wer den Bot aber bei soch Zuhause hosten möchte, kann ein Raspberry Pi mit dem Rapberry Pi Os nehmen, dann könnt ihr per VNC Connect einen Remote zugriff einrcihten , wo ihr auch den vollständigen desktop vom Pi sehen könnt.
+Alle Libarys die das Bot-Skript braucht, müsst ihr auch auf dem Pi installieren.
+Discord-py müsst ihr auf dem Pi installieren, sonst geht gar nichts, die restlichen Liabrys die ihr euch nachinstalliert habt, welche auch vom Skript genutzt werden, müssen dann halt auch auf dem Pi installiert werden.
+
+
+
+Discord Python bei GitHub: https://github.com/Rapptz/discord.py
+                                  
+
