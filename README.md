@@ -28,25 +28,6 @@ In "Zeile 23,24" kannst du sehen "if message.content.startswith('hello'): await 
 
 Auf dem Skript könnt ihr eueren Bot aufbauen.
 
-# Wilkommensbildschirm
-Als erstes muss man die Autoroles konfigurieren mit(kopiere es so): autoroles = {
-                                                         #Ersetzen durch Server ID: {'memberoles':[#ID der Rollen die ein Mensch bekommen soll], }
-Dadurch bekommt das neue Mitglied automatisch eine Rolle
-
-
-Dann müsst ihr ein @client.event machen mit "async def on_member_join(member):
-                                                 await client.get_channel(# ID die der Wilkommenskanal hat).(f"Hi {member.mention} willkommen auf meinem Server!") "
-
-Die Wilkommensnachricht könnt ihr so machen wie ihr sie wollt, das membe.mention erwähnt  nur den Benutzer der gejoint ist
-Dann unter dem await: " guild: guild = member.guild 
-    autoguild  = autoroles.get(guild.id)
-    if autoguild: autoguild  ['memberoles']
-    for roleId in  autoguild['memberoles']:
-               role = guild.get_role(roleId)
-               if role: 
-                   await member.add_roles(role, reason='autoroles, atomic=True')"
-
-Den Code könnt ihr so kopieren und in euer Skript einfügen. 
 
 
 
