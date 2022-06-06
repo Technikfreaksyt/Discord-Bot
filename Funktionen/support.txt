@@ -1,0 +1,8 @@
+  if message.content.startswith('//support'):
+         guild = message.guild
+         await message.channel.send('Das Ticket wird erstellt, bitte warten!')
+         await message.channel.purge(limit=2)
+        
+         channel = await guild.create_text_channel(str(message.author))
+         await channel.set_permissions(message.author,send_messages=True,read_message_history=True,read_messages=True)
+         await channel.set_permissions(discord.utils.get(message.author.guild.roles, id = #ID der Rolle ),send_messages=False,read_messages = False,read_message_history=False)
