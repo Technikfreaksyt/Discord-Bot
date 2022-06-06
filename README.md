@@ -51,7 +51,11 @@ Den Befehl kannst du so ändern , wie er für dich sein soll, z.B !voice, ?voice
 Der Code wird so wie das hello eingerückt, also das if , muss in der Spalte vom hello sein.
 
 
-
+# Help command
+Der Help command ist sehr einfach gemacht:
+Man nimmt dem Block mit hello.
+Der Befehl kann z.B sein !help,?help,/help.
+Damit die einzelnen Funktionen untereinander aufgelistet werden, kannst du als Antwort z.B Sprachkanl: //voice, dann den Gleich Block kopieren und darunter einfügen.
 
 # Hosten vom Bot
 Ihr könnt euern Bot z.B be replit hosten, wer den Bot aber bei sich Zuhause hosten möchte, kann ein Raspberry Pi mit dem Rapberry Pi Os nehmen, dann könnt ihr per VNC Connect einen Remote-Zugriff darauf einrichten , wo ihr auch den vollständigen Desktop vom Pi sehen könnt.
