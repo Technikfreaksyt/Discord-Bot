@@ -33,6 +33,19 @@ Als erstes muss man die Autoroles konfigurieren ( Skript ist im Ordner Funktione
 
 Der Rest steht im Skript, die Kommentierungen bitte einfach mit den richtigen Daten austauschen. 
 
+# Supportkanal
+Das Skript findest du im Ordner Funktionen und heißt: support
+Die Funtkion support kanal musst mit bei der Funktion vom "if message.content.startswith('hello')" einbauen, den den Blcok mit hello kopierst du eifach und guckst, ob eer richtig eingerückt ist.
+Der Befehl kann z.B sein /help,//help,!help,?help,/support,.... , der Befehl kann so sein, wie du willst
+Jetzt pass gut auf!!!
+Unter dem Teil wos steht,das der Channel erstellt wird, ist einmal das :  await channel.set_permissions(message.author,send_messages=True,read_message_history=True,read_messages=True) und einmal das: 
+await channel.set_permissions(discord.utils.get(message.author.guild.roles, id = #ID der Rolle ),send_messages=False,read_messages = False,read_message_history=False) 
+Das erste muss unbedingt bleiben, sonst kann der Autor seinen eigenen Knal nicht sehen.
+Das zweite sagt welche Rolle was darf, bei meinem Bot ist es so: dei Mitglied Rolle kann den Kanal nicht sehen, außer es ist ihr eigener Support Kanal.
+Du kannst den Zweiten Teil beliebig einfügen, und für jede Rolle alles Passend konfigurieren.
+False heißt dabei: Man darf es nicht , True heißt: man darf es.
+
+
 
 
 # Hosten vom Bot
