@@ -45,6 +45,11 @@ Das zweite sagt welche Rolle was darf, bei meinem Bot ist es so: dei Mitglied Ro
 Du kannst den Zweiten Teil beliebig einfügen, und für jede Rolle alles Passend konfigurieren.
 False heißt dabei: Man darf es nicht , True heißt: man darf es.
 
+# Sprachkanal
+der Code ist im Ordnmer Funktionen mit dem Namen Voice.
+Den Befehl kannst du so ändern , wie er für dich sein soll, z.B !voice, ?voice, /voice,.....
+Der Code wird so wie das hello eingerückt, also das if , muss in der Spalte vom hello sein.
+
 
 
 
